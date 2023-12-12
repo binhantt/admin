@@ -9,7 +9,7 @@ class Admin extends Controller
         $data =[];
         $data['title'] = "ADMIN";
         $data ['img'] ="";
-        $data['template'] = "Admin/menu";
+        $data['template'] = "Admin/sidebar";
         return view('Admin', $data);
     }
     public function news(){
