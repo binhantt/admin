@@ -134,7 +134,13 @@
   position: relative;
   margin:1em ;
 }
+.button:hover svg .fa-primary {
+      fill: white; /* Đổi màu sắc fill của phần primary của SVG thành trắng */
+    }
 
+    .button1:hover svg .fa-secondary {
+      fill: white; /* Đổi màu sắc fill của phần secondary của SVG thành trắng */
+    }
 .svgIcon {
   width: 12px;
 
@@ -143,7 +149,7 @@
 .svgIcon path {
   fill: black;
 }
-.svgIcon path:hover{
+.button1:hover svg{
   fill: white;
 }
 .button:hover {
@@ -173,9 +179,7 @@
   transition-duration: .3s;
   background-color: rgb(69, 255, 85);
   align-items: center;
-}
-.button1:hover > svg {
-  color: #ffffff;
+
 }
 
 .di{
