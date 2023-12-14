@@ -13,7 +13,7 @@
 </head>
 <body>
     @include('Admin/index');
-    @include('Admin/sidebar');
+
     @include($template);
 </body>
 </html>

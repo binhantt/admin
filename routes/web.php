@@ -19,3 +19,8 @@ Route::prefix('admin')->group(function(){
     Route::get('add','App\Http\Controllers\Admin@add');
   
 });
+Route::prefix('page')->group(function(){
+    Route::get('index', 'App\Http\Controllers\Page@index');
+    Route::get('order', 'App\Http\Controllers\Page@order');
+    Route::get('commodity', 'App\Http\Controllers\Page@commodity');
+});

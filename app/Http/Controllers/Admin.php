@@ -16,7 +16,6 @@ class Admin extends Controller
         $data =[];
         $data['title'] = "NEW";
         $data['Admin']=AdminModel::get()->toArray();
-       
         $data['template'] = "Admin/news";
         return view('Admin', $data);
     }
@@ -26,4 +25,4 @@ class Admin extends Controller
         $data['template'] = "Admin/add";
         return view('Admin', $data);
     }
-}
+};
