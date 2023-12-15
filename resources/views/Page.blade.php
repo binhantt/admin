@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-qrTq4Ivah5kA/eC6ovZMl+Uwz0Y1ND+oQD93kpsXDz1UN1fZ+RcU3/eAveokSv5cGpFLMqfFqL9RH6e43YQK8iA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="{{ asset('css/page.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}">
     <title>{{$title}}</title>
 </head>
 <body>
@@ -67,3 +70,22 @@
    
 </body>
 </html>
+<script>
+var selectedData = null;
+    
+    function handleClick(jsonData) {
+        const item = JSON.parse(jsonData);
+        selectedData = item;
+        showselectModal();
+    } 
+    function showselectModal() {
+        my_modal_3.showModal();
+    
+        if (selectedData) {
+            $('#modal-card-image').text(selectedData.img);
+            $('#modal-category').text(selectedData.name);
+            $('#modal-money').text(selectedData.gia);
+            //console.log(selectedData);
+        }
+    }
+</script>
