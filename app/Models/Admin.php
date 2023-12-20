@@ -9,4 +9,6 @@ class Admin extends Model
 {
         protected $table = 'admin';
         protected $fillable = ['id','name','img','loai','gia','created_at'];
+      
+        
 }

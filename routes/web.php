@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,8 @@ Route::prefix('admin')->group(function(){
     Route::get('index', 'App\Http\Controllers\Admin@index');
     Route::get('news', 'App\Http\Controllers\Admin@news');
     Route::get('add','App\Http\Controllers\Admin@add');
-  
+    Route::post('news/add', 'App\Http\Controllers\Admin@newsadd');
+    Route::put('news-edit/{id}', 'App\Http\Controllers\Admin@newsedit');
 });
 Route::prefix('page')->group(function(){
     Route::get('index', 'App\Http\Controllers\Page@index');
