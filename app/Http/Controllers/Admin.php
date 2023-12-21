@@ -24,6 +24,10 @@ class Admin extends Controller
         AdminModel::create($_POST);
         return redirect('/admin/news');
     } 
+    public function newsdelete($id){
+        AdminModel::where('id','=',$id)->delete();
+
+    }
     public function edit($id)
     {
        AdminModel::edit();

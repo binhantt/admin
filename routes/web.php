@@ -20,6 +20,7 @@ Route::prefix('admin')->group(function(){
     Route::get('add','App\Http\Controllers\Admin@add');
     Route::post('news/add', 'App\Http\Controllers\Admin@newsadd');
     Route::put('news-edit/{id}', 'App\Http\Controllers\Admin@newsedit');
+    Route::delete('news/delete/{id}', 'App\Http\Controllers\Admin@newsdelete');
 });
 Route::prefix('page')->group(function(){
     Route::get('index', 'App\Http\Controllers\Page@index');
