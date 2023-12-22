@@ -10,11 +10,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="{{ asset('css/page.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset('image/house-door-fill.svg') }}">
   <title>{{$title}}</title>
 </head>
 <body>
-  <div class=" flex flex-col">
+  <div class=" flex flex-col bg-gray-100">
     <div class="">
       <div class="">
         @include('Admin/index');
@@ -23,7 +23,7 @@
         @include('Admin/sidebar');
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-end mr-20 ">
       @include($template);
     </div>
   </div>

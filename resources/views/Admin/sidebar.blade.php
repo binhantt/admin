@@ -1,10 +1,10 @@
 
-    <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center dark:bg-gray-900">
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gradient-to-r from-cyan-500 to-blue-500">
         <div class="text-gray-100 text-xl">
           <div class="p-2.5 mt-1 flex justify-center">      
-            <i class="bi bi-layout-sidebar-inset-reverse text-blue-600  mr-2"></i>
-            <h1 class="text-blue-600 dark:text-blue-500 items-center">
-              Dashboard
+            <i class="bi bi-layout-sidebar-inset-reverse text-white-600  mr-2"></i>
+            <h1 class="text-zinc-50 truncate  text-xl">
+                  Dashboard
             </h1>
           </div>
           <div class="my-2 bg-gray-600 h-[1px]"></div>
